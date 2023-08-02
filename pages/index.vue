@@ -92,7 +92,7 @@
 }
 
 #hello .head h1 {
-  font-size: 58px;
+  font-size: 48px;
   line-height: 1;
   color: #E5E9F0;
   font-family: 'Fira Code Regular';
@@ -101,7 +101,7 @@
 }
 
 #hello .head h2 {
-  font-size: 32px;
+  font-size: 22px;
   line-height: 1;
   color: #4D5BCE;
   font-family: 'Fira Code Retina';

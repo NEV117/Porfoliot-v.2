@@ -1,7 +1,7 @@
 {
     "name": "Nicolas Escandon",
     "logo_name": "NEV117",
-    "role": "Aspiring Full-Stack Developer.",
+    "role": "Back-end Developer.",
     "about": {
         "sections": {
             "professional-info": {
@@ -14,11 +14,11 @@
                     },
                     "hard-skills": {
                         "title": "hard-skills",
-                        "description": "<br>As a front-end developer, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": "<br>As a developer, I am embracing a dynamic phase of versatility that enables me to actively contribute to project development, whether it's on the resilient backend or the engaging frontend. While I hold a particular affinity and leaning towards backend development and services, I have laid a solid groundwork in logic, algorithms, data structures, and conscientious coding practices, which I believe add depth to my capabilities. <br> <br> Furthermore, I bring valuable experience to the table, having previously served as a full-stack developer on an Angular + .NET project within the industry. This exposure has not only sharpened my technical prowess but has also honed my ability to navigate the intricacies of cross-disciplinary collaboration."
                     },
                     "soft-skills": {
                         "title": "soft-skills",
-                        "description": "<br>I bring more than Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": "<br>Beyond my technical expertise, my soft skills play a crucial role in my development journey. I approach challenges with curiosity and a hunger for learning, ensuring continuous improvement. Strong communication skills facilitate collaboration and effective problem-solving, while adaptability allows me to embrace new technologies and methods. <br><br> I value feedback, actively seek mentorship, and contribute positively to team dynamics. Empathy and understanding help me connect with diverse stakeholders, ensuring solutions are not only technically sound but also aligned with real-world needs. My blend of technical proficiency and soft skills enables me to deliver results and cultivate a collaborative and inclusive development environment."
                     }
                 }
             },
@@ -28,7 +28,7 @@
                 "info": { 
                     "bio": {
                         "title": "bio",
-                        "description": "<br> About me <br> I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat  officia deserunt mollit anim id est laborum."
+                        "description": "<br> Hello there! I'm a 20-year-old enthusiast currently in my final year of computer engineering in Cali, Colombia. With a growing passion for coding and a dash of real-world experience under my belt, I'm eagerly stepping into the tech arena. <br><br> Throughout my academic journey, I've been unwavering in my pursuit of knowledge and my dedication to refining my programming skills. While I may be on the junior side of the developer spectrum, what I lack in years, I make up for with an insatiable curiosity and an eagerness to dive into new challenges. <br><br> Remote work as a developer is my goal, as it perfectly aligns with my flexible mindset and the chance to collaborate with diverse teams. I've already had the opportunity to work on a few projects, which has fueled my determination to learn and contribute even more. Now, I'm excited to channel that energy into a dynamic junior role, soaking up every learning opportunity and actively contributing to innovative projects. <br><br> Joining a forward-thinking team that values growth and creativity is my next step, and I'm thrilled to embark on this journey as a junior developer. Let's connect and explore the possibilities together!"
                     },
                     "interests": {
                         "title": "interests",
@@ -64,8 +64,8 @@
         "direct": {
             "title": "contacts",
             "sources": {
-                "email": "nicoescandonvarela123@gmail.com",
-                "phone": "+573104615959"
+                "email": "nicoescandonvarela123<br>@gmail.com",
+                "phone": "+57 3104615959"
             }
         },
         "social": {
