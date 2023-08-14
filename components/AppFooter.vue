@@ -2,7 +2,7 @@
     <footer class='flex md:justify-between border-top text-menu-text font-fira_retina'>
 
         <!-- social icons -->
-        <div class="w-full flex justify-between md:justify-start">
+        <!-- <div class="w-full flex justify-between md:justify-start">
             <span id="social-title" class="h-full flex justify-center items-center border-right px-5">
                 find me in:
             </span>
@@ -17,7 +17,7 @@
                 <img src="/icons/social/github.svg"/>
             </NuxtLink>
             </div>
-        </div>
+        </div> -->
 
         <!-- github user -->
         <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="hidden md:flex items-center px-5 border-left">

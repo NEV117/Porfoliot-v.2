@@ -32,15 +32,11 @@
                     },
                     "interests": {
                         "title": "interests",
-                        "description": "<br>I am constantly learning and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": "<br>My passion lies at the intersection of data and its manipulation. From the intricacies of databases to the seamless integration of APIs, I find the world of data enthralling. The challenge of crafting logical processes and efficient algorithms to extract meaningful insights from raw information captivates me. Data's ability to tell stories and drive informed decisions has motivated me to delve deep into this realm, enhancing my skills to unlock its true potential. <br><br> I'm captivated by the realm of artificial intelligence (AI). The notion of creating systems that mimic human intelligence, enabling machines to learn, reason, and solve complex problems, fascinates me. From machine learning to neural networks, I'm engrossed in the myriad applications that AI offers across industries. I relish the challenge of developing intelligent algorithms that adapt and evolve, and I'm committed to staying abreast of AI's rapid evolution, eager to contribute to its ever-expanding possibilities. <br><br> Data science and business intelligence have emerged as my dual passions. The art of unraveling patterns, predicting trends, and making data-driven decisions within the realm of data science is something I've actively cultivated. Simultaneously, I'm intrigued by the strategic insights that business intelligence offers – harnessing data to empower enterprises to make informed choices that drive growth. The convergence of these fields offers endless opportunities to contribute meaningfully and drive innovation in today's data-centric landscape. "
                     },
                     "education": {
                         "title": "education",
-                        "description": "<br>I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                        "files": {
-                            "high-school": "I have been in 'Las viñas'...",
-                            "university": "The university..."
-                        }
+                        "description": "<br>I'm on the cusp of completing my Computer Engineering degree at Universidad Autónoma de Occidente in Cali, Colombia. My academic journey has molded me into a versatile developer with a strong foundation in both technical and interpersonal skills. <br><br> My education spans the spectrum, covering everything from programming logic and algorithms to networks, operating systems, and cybersecurity. This diverse knowledge equips me to create efficient solutions and ensure robustness in any project. <br><br> Beyond technical prowess, my teamwork, project formulation, and communication skills are finely tuned. I'm primed to collaborate seamlessly with diverse teams, adapting to various roles. <br><br> As I approach the professional realm, I'm excited to leverage this comprehensive education. My goal is to contribute effectively as a backend developer, though I'm also open to front-end or other roles that align with my adaptable skill set.   "
                     }
                 }
             },
@@ -49,12 +45,8 @@
                 "icon": "icons/info-hobbies.svg",
                 "info": {
                     "sports": {
-                        "title": "sports",
-                        "description": "<br>I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-                    },
-                    "favorite-games": {
-                        "title": "favorite-games",
-                        "description": "<br>I am a passionate gamer with Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        "title": "strength-beyond-software_Weightlifting",
+                        "description": "<br>Beyond my coding endeavors, I find solace and strength in weightlifting. For the past 5 years, the gym has been my sanctuary, where lifting weights brings discipline and focus to my life. <br><br> Weightlifting isn't just a hobby; it's a lifestyle that complements my dedication to software development. It teaches me persistence and fuels my determination. <br><br> My commitment to weightlifting is as enduring as my passion for coding. It's a lifelong pursuit that mirrors my desire for constant growth. <br><br> In weights and code, I discover harmony between physical and mental prowess. This dual pursuit defines my balanced approach to success."
                     }
                 }
             }
@@ -84,36 +76,11 @@
                 "url": "https://twitter.com/",
                 "user": "username"
             }
-        },
-        "find_me_also_in": {
-            "title": "find-me-also-in",
-            "sources": {
-                "youtube": {
-                    "title": "YouTube channel",
-                    "url": "https://www.youtube.com/",
-                    "user": "username"
-                },
-                "gurushots": {
-                    "title": "GuruShots profile",
-                    "url": "https://gurushots.com/",
-                    "user": "username"
-                },
-                "instagram": {
-                    "title": "Instagram account",
-                    "url": "https://instagram.com/",
-                    "user": "username"
-                },
-                "twitch": {
-                    "title": "Twitch profile",
-                    "url": "https://twitch.com/",
-                    "user": "username"
-                }
-            }
         }
     },
     "gists": {
-        "1": "83861a67e377633ee8368df01ee3a355",
-        "2": "694c1f32332788a2ac7f37b09e5aa40e"
+        "1": "4ed0d622b7d425dbfa9a27a640a41fdc",
+        "2": "3bd1c8c06533eae569a1d7557c93b309"
     },
     "projects": {
         "1": {
