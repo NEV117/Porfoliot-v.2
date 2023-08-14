@@ -2,10 +2,12 @@
     "name": "Portfolio for Developers Concept v2",
     "short_name": "Developer Portfolio",
     "description": "A awesome portfolio template for developers",
+    "start_url": "https://transcendent-pie-52a9c5.netlify.app/",
     "display": "standalone",
     "orientation": "portrait",
     "background_color": "#010C15",
     "theme_color": "#010C15",
+    "scope": "https://transcendent-pie-52a9c5.netlify.app/",
     "icons": [{
         "src": "icons/icon48.png",
         "sizes": "48x48",
