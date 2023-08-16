@@ -66,6 +66,11 @@ export default defineNuxtConfig({
     viewer: false,
   },
 
+  generate: {
+    routes: ['/', '/about-me', '/projects', '/contact-me'],
+    // Otras opciones de generación...
+  },
+
   /**
    * * Runtime Config (Environment Variables)
    * Usage: https://nuxt.com/docs/guide/going-further/runtime-config
