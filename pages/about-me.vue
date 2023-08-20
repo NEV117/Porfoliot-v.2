@@ -136,7 +136,7 @@
         </div>
 
         <!-- text -->
-        <div id="commented-text" class="flex h-full w-full lg:border-right overflow-hidden overflow-auto">
+        <div id="commented-text" class="flex h-full w-full lg:border-right  overflow-auto">
 
           <div class="w-full h-full ml-5 mr-10 lg:my-5 overflow-scroll">
             <CommentedText :text="config.dev.about.sections[currentSection].info[folder].description" />

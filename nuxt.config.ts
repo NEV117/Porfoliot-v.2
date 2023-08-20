@@ -67,8 +67,28 @@ export default defineNuxtConfig({
   },
 
   generate: {
-    routes: ['/', '/about-me', '/projects', '/contact-me'],
-    // Otras opciones de generación...
+    routes: [
+      {
+        name: 'index',
+        path: '/',
+        component: 'pages/index.vue'
+      },
+      {
+        name: 'contact-me',
+        path: '/contact-me',
+        component: 'pages/contact-me.vue'
+      },
+      {
+        name: 'projects',
+        path: '/projects',
+        component: 'pages/projects.vue'
+      },
+      {
+        name: 'about-me',
+        path: '/about-me',
+        component: 'pages/about-me.vue'
+      }
+    ]
   },
 
   /**
