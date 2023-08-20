@@ -23,7 +23,7 @@
   
         <div v-for="tech in techs" :key="tech" class="flex items-center py-2">
           <input type="checkbox" :id="tech" @click="filterProjects(tech)">
-          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech + '.svg'" alt="" class="tech-icon w-5 h-5 mx-4">
+          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech + '.png'" alt="" class="tech-icon w-5 h-5 mx-4">
           <span :id="'title-tech-' + tech">{{ tech }}</span>
         </div>
       </nav>
@@ -75,7 +75,7 @@
           <div id="project-card" class="flex flex-col">
             <div id="window">
               <div class="absolute flex right-3 top-3">
-                <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/filled/' + tech + '.svg'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">
+                <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/filled/' + tech + '.png'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">
               </div>
               <img id="showcase" :src="project.img" alt="" class="">
             </div>
