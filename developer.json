@@ -79,6 +79,16 @@
                 "title": "Twitter account",
                 "url": "https://twitter.com/",
                 "user": "username"
+            },
+            "leetcode": {
+                "title": "Leetcode account",
+                "url": "https://leetcode.com/escandon_varela/",
+                "user": "username"
+            },
+            "linkedin": {
+                "title": "Linkedin account",
+                "url": "https://www.linkedin.com/in/nicolas-escandon/",
+                "user": "username"
             }
         },
         "find_me_also_in": {
@@ -134,23 +144,31 @@
             "url": "https://github.com/NEV117/Encriptador"
         },
         "4": {
-            "title": "_ui-animations",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/ui-animations.png",
-            "tech": ["React"],
-            "url": "https://github.com/"
+            "title": "_alura-hotel",
+            "description": "A backend programing challenge from Oracle Next Education",
+            "img": "/images/projects/Reservas-30-seg.gif",
+            "tech": ["Java"],
+            "url": "https://github.com/NEV117/challenge-one-alura-hotel-latam"
         },
         "5": {
-            "title": "_tetris-game",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/tetris-game.png",
+            "title": "_quiz-app",
+            "description": "A simple Quiz app made in react + vite",
+            "img": "/images/projects/quizApp.png",
             "tech": ["React"],
-            "url": "https://github.com/"
+            "url": "https://github.com/NEV117/Quiz-App"
         },
         "6": {
-            "title": "_ethereum",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/ethereum.png",
+            "title": "_text-editor",
+            "description": "A google docs like text editor made in react",
+            "img": "/images/projects/simpleTextEditor.png",
+            "tech": ["React"],
+            "url": "https://github.com/NEV117/simple-text-editor"
+        }
+        ,
+        "7": {
+            "title": "_snake-game",
+            "description": "asbtract of the logic from the snakegame modal",
+            "img": "/images/projects/snakeGame.png",
             "tech": ["Vue"],
             "url": "https://github.com/"
         }

@@ -2,22 +2,22 @@
     <footer class='flex md:justify-between border-top text-menu-text font-fira_retina'>
 
         <!-- social icons -->
-        <!-- <div class="w-full flex justify-between md:justify-start">
+        <div class="w-full flex justify-between md:justify-start">
             <span id="social-title" class="h-full flex justify-center items-center border-right px-5">
                 find me in:
             </span>
-            <div id="social-icons" class="flex">
-                <NuxtLink :to="social.twitter.url + social.twitter.user" target="_blank" class="flex justify-center items-center">
-                    <img src="/icons/social/twitter.svg"/>
+            <div id="social-icons" class="flex">                
+                <NuxtLink :to="social.linkedin.url" target="_blank" class="flex justify-center items-center">
+                    <img src="/icons/social/linkedin-fill.svg"/>
                 </NuxtLink>
-                <NuxtLink :to="social.facebook.url + social.facebook.user" target="_blank" class="flex justify-center items-center">
-                    <img src="/icons/social/facebook.svg"/>
+                <NuxtLink :to="social.leetcode.url" target="_blank" class="flex justify-center items-center">
+                    <img src="/icons/social/leetcode.svg"/>
                 </NuxtLink>
                 <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="flex md:hidden justify-center items-center">
                 <img src="/icons/social/github.svg"/>
             </NuxtLink>
             </div>
-        </div> -->
+        </div>
 
         <!-- github user -->
         <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="hidden md:flex items-center px-5 border-left">
