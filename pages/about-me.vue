@@ -385,9 +385,41 @@
             </template>
             <template v-else-if="folder === 'hard-skills'">
               <!-- Custom content for 'hard-skills' folder -->
-              <p data-aos="fade-down" class="text-white">
-                Hard skills folder content :)
-              </p>
+              <div data-aos="fade-down" class="hardskills-layout">
+                <div class="mx-auto">
+                  <img :src="'/images/techs/angular.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
+                  <p class="text-white mx-auto">Angular</p>
+                </div>                
+                <div class="mx-auto">
+                  <img :src="'/images/techs/react.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
+                  <p class="text-white mx-auto">React</p>
+                </div>                
+                <div class="mx-auto">
+                  <img :src="'/images/techs/vue.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
+                  <p class="text-white mx-auto">Vue</p>
+                </div>
+                <div class="mx-auto">
+                  <img :src="'/images/techs/angular.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
+                  <p class="text-white mx-auto">.Net</p>
+                </div>
+                <div class="mx-auto">
+                  <img :src="'/images/techs/angular.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
+                  <p class="text-white mx-auto">Spring</p>
+                </div>
+                <div class="mx-auto">
+                  <img :src="'/images/techs/react.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
+                  <p class="text-white mx-auto">TypeScript</p>
+                </div>
+                <div class="mx-auto">
+                  <img :src="'/images/techs/java.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
+                  <p class="text-white mx-auto">Java</p>
+                </div>
+                <div class="mx-auto">
+                  <img :src="'/images/techs/java.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
+                  <p class="text-white mx-auto">C#</p>
+                </div>
+
+              </div>
             </template>
             <template v-else-if="folder === 'soft-skills'">
               <!-- Custom content for 'soft-skills' folder -->
@@ -497,6 +529,13 @@
     overflow: hidden;
   }
 
+  .hardskills-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    padding: 1rem;
+  }
+
   #about {
     min-height: stretch;
   }
@@ -508,6 +547,13 @@
 
 #section-content #contacts {
   padding: 0px 25px;
+}
+
+.hardskills-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
+  padding-top: 1rem;
 }
 </style>
 
