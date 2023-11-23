@@ -24,7 +24,7 @@
             </div>
 
             <!-- find me also in -->
-            <div id="find-me-in" class="submenu border-top">
+            <!-- <div id="find-me-in" class="submenu border-top">
                 <div class="title" @click="open('find-me-in')">
                     <img class="arrow" src="/icons/arrow.svg">
                     <h3>
@@ -37,7 +37,7 @@
                         <a :href="source.url + source.user" class="font-fira_retina text-menu-text hover:text-white" target="_blank">{{ source.title }}</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
             

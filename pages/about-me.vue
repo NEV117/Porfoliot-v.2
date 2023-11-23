@@ -304,8 +304,6 @@
                       <div>
                         <a
                           class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                          href="https://upstatement.com"
-                          target="_blank"
                           rel="noreferrer"
                           aria-label="Lead Engineer at Upstatement"
                           ><span
@@ -335,8 +333,7 @@
                       </div>
                     </h3>
                     <p class="mt-2 text-slate-400 text-sm leading-normal">
-                      Deliver high-quality, robust production code for a diverse
-                      array of projects for clients including Harvard Business
+                      Collaborated with a team of developers to design and implement software solutions for a client. Followed Agile methodologies to ensure efficient project delivery.
                     </p>
                     <ul
                       class="mt-2 flex flex-wrap"
