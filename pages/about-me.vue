@@ -31,11 +31,12 @@
         <div
           id="section-content-title"
           class="hidden lg:flex items-center min-w-full"
+          @click="open('section-icon')"
         >
           <img
             id="section-arrow-menu"
             src="/icons/arrow.svg"
-            alt=""
+            alt="section-arrow-menu"
             class="section-arrow mx-3 open"
           />
           <p
@@ -45,7 +46,7 @@
         </div>
 
         <!-- folders -->
-        <div>
+        <div id="folderContent">
           <div
             v-for="(folder, key, index) in config.dev.about.sections[
               currentSection
@@ -285,7 +286,7 @@
             <!-- snippets or custom content based on selected folder -->
             <template v-if="folder === 'experience'">
               <!-- Custom content for 'experience' folder -->
-              <div data-aos="fade-down" class="rounded-md ">
+              <div data-aos="fade-down" class="rounded-md">
                 <div
                   class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
                 >
@@ -296,7 +297,7 @@
                     class="z-10 mb-2 mt-1 pl-8 pt-4 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
                     aria-label="May 2023 - Present"
                   >
-                    May 2023 - Present
+                    May 2023 - Nov 2023
                   </header>
                   <div class="z-10 sm:col-span-6 pr-5 pt-5 pb-5">
                     <h3 class="font-medium leading-snug text-slate-200">
@@ -378,54 +379,307 @@
                       </li>
                     </ul>
                   </div>
-                  
                 </div>
-
               </div>
             </template>
             <template v-else-if="folder === 'hard-skills'">
               <!-- Custom content for 'hard-skills' folder -->
-              <div data-aos="fade-down" class="hardskills-layout">
-                <div class="mx-auto">
-                  <img :src="'/images/techs/angular.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
-                  <p class="text-white mx-auto">Angular</p>
-                </div>                
-                <div class="mx-auto">
-                  <img :src="'/images/techs/react.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
-                  <p class="text-white mx-auto">React</p>
-                </div>                
-                <div class="mx-auto">
-                  <img :src="'/images/techs/vue.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
-                  <p class="text-white mx-auto">Vue</p>
+              <GistSnippet
+                data-aos="fade-down"
+                :id="config.public.dev.gists['2']"
+              />
+              <!-- Primer acordeón -->
+              <div id="backendSkills" class="submenu">
+                <div class="title" @click="toggleAccordion('backendAccordion')">
+                  <img
+                    :class="{ 'rotate-arrow': isArrowRotated.backendAccordion }"
+                    class="arrow"
+                    src="/icons/arrow.svg"
+                  />
+                  <h3>Backend</h3>
                 </div>
-                <div class="mx-auto">
-                  <img :src="'/images/techs/angular.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
-                  <p class="text-white mx-auto">.Net</p>
+                <div
+                  id="backendLinks"
+                  v-if="openAccordion === 'backendAccordion'"
+                >
+                  <ul
+                    class="mt-2 pl-3.5 flex flex-wrap"
+                    aria-label="Technologies used"
+                  >
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        Java Spring Boot
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        .NET Core
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        NodeJS
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        Express
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        Prisma
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        Python FLask
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-                <div class="mx-auto">
-                  <img :src="'/images/techs/angular.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
-                  <p class="text-white mx-auto">Spring</p>
-                </div>
-                <div class="mx-auto">
-                  <img :src="'/images/techs/react.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
-                  <p class="text-white mx-auto">TypeScript</p>
-                </div>
-                <div class="mx-auto">
-                  <img :src="'/images/techs/java.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
-                  <p class="text-white mx-auto">Java</p>
-                </div>
-                <div class="mx-auto">
-                  <img :src="'/images/techs/java.svg'" alt="" class="w-10 mx-1 hover:opacity-75">
-                  <p class="text-white mx-auto">C#</p>
-                </div>
+              </div>
 
+              <!-- Segundo acordeón -->
+              <div id="frontendSkills" class="submenu">
+                <div
+                  class="title"
+                  @click="toggleAccordion('frontendAccordion')"
+                >
+                  <img
+                    :class="{
+                      'rotate-arrow': isArrowRotated.frontendAccordion,
+                    }"
+                    class="arrow"
+                    src="/icons/arrow.svg"
+                  />
+                  <h3>FrontEnd</h3>
+                </div>
+                <div
+                  id="frontendLinks"
+                  v-if="openAccordion === 'frontendAccordion'"
+                >
+                  <ul
+                    class="mt-2 pl-3.5 flex flex-wrap"
+                    aria-label="Technologies used"
+                  >
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        ReactJS
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        NextJS
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        Angular
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        Vue
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        HTML
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        CSS
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        TailwindCss
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- tercer acordeón -->
+              <div id="otherSkills" class="submenu">
+                <div class="title" @click="toggleAccordion('otherAccordion')">
+                  <img
+                    :class="{ 'rotate-arrow': isArrowRotated.otherAccordion }"
+                    class="arrow"
+                    src="/icons/arrow.svg"
+                  />
+                  <h3>Others</h3>
+                </div>
+                <div id="otherLinks" v-if="openAccordion === 'otherAccordion'">
+                  <ul
+                    class="mt-2 pl-3.5 flex flex-wrap"
+                    aria-label="Technologies used"
+                  >
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        Git
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        Java
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        C#
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        TypeScript
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        JavaScript
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        Python
+                      </div>
+                    </li>
+                    <li class="mr-1.5 mt-2">
+                      <div
+                        class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                      >
+                        TensorFlow
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </template>
             <template v-else-if="folder === 'soft-skills'">
               <!-- Custom content for 'soft-skills' folder -->
-              <p data-aos="fade-down" class="text-white">
-                Soft skills folder content :)
-              </p>
+              <div class="BubblesContainer">
+                <div class="bubble">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="bubble">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="bubble">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="bubble">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="bubble">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </template>
+            <template v-else-if="folder === 'interests'">
+              <!-- title -->
+              <h3 class="text-white lg:text-menu-text mb-4 text-sm">
+                // Code snippet showcase:
+              </h3>
+              <!-- Default content if none of the above conditions match -->
+              <GistSnippet
+                data-aos="fade-down"
+                :id="config.public.dev.gists['7']"
+              />
+              <GistSnippet
+                data-aos="fade-down"
+                :id="config.public.dev.gists['4']"
+              />            
+            </template>
+            <template v-else-if="folder === 'education'">
+              <!-- title -->
+              <h3 class="text-white lg:text-menu-text mb-4 text-sm">
+                // Code snippet showcase:
+              </h3>
+              <!-- Default content if none of the above conditions match -->
+              <GistSnippet
+                data-aos="fade-down"
+                :id="config.public.dev.gists['6']"
+              />
+              <GistSnippet
+                data-aos="fade-down"
+                :id="config.public.dev.gists['5']"
+              />            
+            </template>
+            <template v-else-if="folder === 'sports'">
+              <!-- title -->
+              <h3 class="text-white lg:text-menu-text mb-4 text-sm">
+                // Code snippet showcase:
+              </h3>
+              <!-- Default content if none of the above conditions match -->
+              <GistSnippet
+                data-aos="fade-down"
+                :id="config.public.dev.gists['8']"
+              />
+              <GistSnippet
+                data-aos="fade-down"
+                :id="config.public.dev.gists['9']"
+              />            
             </template>
             <template v-else>
               <!-- title -->
@@ -531,8 +785,8 @@
 
   .hardskills-layout {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 10px; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     padding: 1rem;
   }
 
@@ -551,9 +805,135 @@
 
 .hardskills-layout {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 10px; 
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
   padding-top: 1rem;
+}
+
+.BubblesContainer{
+  height: 600px;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.rotate-arrow {
+  transform: rotate(90deg); /* Rota la flecha 180 grados */
+  transition: transform 0.3s; /* Agrega una transición suave */
+}
+
+.bubble {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 25px rgba (255, 255, 255, 0.25);
+  animation: animate_4010 8s ease-in-out infinite;
+}
+
+.bubble:nth-child(2) {
+  position: relative;
+  zoom: 0.45;
+  left: -10px;
+  top: -100px;
+  animation-delay: -4s;
+}
+
+.bubble:nth-child(3) {
+  position: relative;
+  zoom: 0.45;
+  right: -80px;
+  top: -300px;
+  animation-delay: -6s;
+}
+
+.bubble:nth-child(4) {
+  position: relative;
+  zoom: 0.35;
+  left: -120px;
+  bottom: -200px;
+  animation-delay: -3s;
+}
+
+.bubble:nth-child(5) {
+  position: relative;
+  zoom: 0.5;
+  left: 0px;
+  top: 200px;
+  animation-delay: -5s;
+}
+
+@keyframes animate_4010 {
+  0%,100% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+.bubble::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 45px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 10;
+  filter: blur(2px);
+}
+
+.bubble::after {
+  content: '';
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 10;
+  filter: blur(2px);
+}
+
+.bubble span {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.bubble span:nth-child(1) {
+  inset: 10px;
+  border-left: 15px solid #0fb4ff;
+  filter: blur(8px);
+}
+
+.bubble span:nth-child(2) {
+  inset: 10px;
+  border-right: 15px solid #ff4484;
+  filter: blur(8px);
+}
+
+.bubble span:nth-child(3) {
+  inset: 10px;
+  border-top: 15px solid #ffeb3b;
+  filter: blur(8px);
+}
+
+.bubble span:nth-child(4) {
+  inset: 30px;
+  border-left: 15px solid #ff4484;
+  filter: blur(12px);
+}
+
+.bubble span:nth-child(5) {
+  inset: 10px;
+  border-bottom: 10px solid #fff;
+  filter: blur(8px);
+  transform: rotate(330deg);
 }
 </style>
 
@@ -564,6 +944,12 @@ export default {
       currentSection: "personal-info",
       folder: "bio",
       loading: true,
+      openAccordion: "backendAccordion", // Inicializa el primer acordeón como abierto.
+      isArrowRotated: {
+        backendAccordion: true, // Inicializa la flecha del primer acordeón como rotada.
+        frontendAccordion: false, // Inicializa la flecha del segundo acordeón como no rotada.
+        otherAccordion: false,
+      },
     };
   },
   /**
@@ -621,6 +1007,15 @@ export default {
     showContacts() {
       document.getElementById("contacts").classList.toggle("hidden");
       document.getElementById("section-arrow").classList.toggle("rotate-90"); // rotate arrow
+    },
+    toggleAccordion(elementId) {
+      if (this.openAccordion === elementId) {
+        this.openAccordion = null;
+        this.isArrowRotated[elementId] = false;
+      } else {
+        this.openAccordion = elementId;
+        this.isArrowRotated[elementId] = true;
+      }
     },
   },
   mounted() {
