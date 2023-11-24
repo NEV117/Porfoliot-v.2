@@ -303,6 +303,7 @@
   font-weight: bold;
   font-size: 14px;
   transition: all .15s ease;
+  z-index: 99;
 }
 
 .button::before,
@@ -354,6 +355,7 @@
   background-color: #0f1923;
   overflow: hidden;
   box-shadow: inset 0px 0px 0px 1px transparent;
+  z-index: 99;
 }
 
 .button_lg::before {
