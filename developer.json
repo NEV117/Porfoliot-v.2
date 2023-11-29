@@ -149,9 +149,9 @@
         },
         "4": {
             "title": "_decentralized-chat-app",
-            "description": "Decentralized chat application using Next.js for the front end and an Express server with Gun.js for message management.",
+            "description": "Decentralized chat application using Next.js and Express server with Gun.js",
             "img": "/images/projects/Metamask-Login2 (1).gif",
-            "tech": ["React"],
+            "tech": ["NextJS", "NodeJS"],
             "url": "https://github.com/NEV117/blockChain-chatApp"
         },
         "5": {

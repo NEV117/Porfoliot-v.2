@@ -254,7 +254,7 @@ export default {
   },
   data() {
     return {
-      techs: ['React', 'HTML', 'CSS', 'Java', 'Spring-Boot'],
+      techs: ['HTML', 'CSS', 'Java', 'Spring-Boot','React', 'NextJS', 'NodeJS'],
       filters: ['all'],
       projects: '',
       loading: true,
