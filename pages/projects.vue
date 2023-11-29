@@ -254,7 +254,7 @@ export default {
   },
   data() {
     return {
-      techs: ['React', 'HTML', 'CSS', 'Vue', 'Angular', 'Gatsby', 'Flutter', 'Java'],
+      techs: ['React', 'HTML', 'CSS', 'Java', 'Spring-Boot'],
       filters: ['all'],
       projects: '',
       loading: true,

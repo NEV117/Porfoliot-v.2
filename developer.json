@@ -127,54 +127,60 @@
     },
     "projects": {
         "1": {
-            "title": "_java-money-conversor",
-            "description": " Proyecto echo para el Challenge ONE Back End - Java",
-            "img": "/images/projects/AluraConversorMoneda_Trim (1).gif",
-            "tech": ["Java"],
-            "url": "https://github.com/NEV117/JavaConversorMonedas"
+            "title": "_spring-rest-api",
+            "description": "A simple rest api made in spring boot, deployed on Render.",
+            "img": "/images/projects/SpringRestApi.JPG",
+            "tech": ["Java", "Spring-Boot"],
+            "url": "https://github.com/NEV117/Spring-Boot-RestAPI"
         },
         "2": {
-            "title": "_css-cube",
-            "description": "Simple Color Chaging cube mande only using HTML and CSS",
-            "img": "/images/projects/css cube.png",
-            "tech": ["CSS", "HTML"],
-            "url": "https://github.com/NEV117/cubo-en-css"
-        },
-        "3": {
-            "title": "_Simple-encriptator",
-            "description": "A Text encriptator that codes and decodes base on simple rules",
-            "img": "/images/projects/simpleTextEncriptor.png",
-            "tech": ["CSS", "HTML"],
-            "url": "https://github.com/NEV117/Encriptador"
-        },
-        "4": {
             "title": "_alura-hotel",
             "description": "A backend programing challenge from Oracle Next Education",
             "img": "/images/projects/Reservas-30-seg.gif",
             "tech": ["Java"],
             "url": "https://github.com/NEV117/challenge-one-alura-hotel-latam"
         },
+        "3": {
+            "title": "_java-money-conversor",
+            "description": "First project made for the Challenge ONE Back End - Java",
+            "img": "/images/projects/AluraConversorMoneda_Trim (1).gif",
+            "tech": ["Java"],
+            "url": "https://github.com/NEV117/JavaConversorMonedas"
+        },
+        "4": {
+            "title": "_decentralized-chat-app",
+            "description": "Decentralized chat application using Next.js for the front end and an Express server with Gun.js for message management.",
+            "img": "/images/projects/Metamask-Login2 (1).gif",
+            "tech": ["React"],
+            "url": "https://github.com/NEV117/blockChain-chatApp"
+        },
         "5": {
+            "title": "_css-cube",
+            "description": "Simple Color Chaging cube mande only using HTML and CSS",
+            "img": "/images/projects/css cube.png",
+            "tech": ["CSS", "HTML"],
+            "url": "https://github.com/NEV117/cubo-en-css"
+        },
+        "6": {
+            "title": "_Simple-encriptator",
+            "description": "A Text encriptator that codes and decodes base on simple rules",
+            "img": "/images/projects/simpleTextEncriptor.png",
+            "tech": ["CSS", "HTML"],
+            "url": "https://github.com/NEV117/Encriptador"
+        },
+        "7": {
             "title": "_quiz-app",
             "description": "A simple Quiz app made in react + vite",
             "img": "/images/projects/quizApp.png",
             "tech": ["React"],
             "url": "https://github.com/NEV117/Quiz-App"
         },
-        "6": {
+        "8": {
             "title": "_text-editor",
             "description": "A google docs like text editor made in react",
             "img": "/images/projects/simpleTextEditor.png",
             "tech": ["React"],
             "url": "https://github.com/NEV117/simple-text-editor"
-        }
-        ,
-        "7": {
-            "title": "_snake-game",
-            "description": "asbtract of the logic from the snakegame modal",
-            "img": "/images/projects/snakeGame.png",
-            "tech": ["Vue"],
-            "url": "https://github.com/"
         }
     }
 }
