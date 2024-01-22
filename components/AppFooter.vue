@@ -10,9 +10,9 @@
                 <NuxtLink :to="social.linkedin.url" target="_blank" class="flex justify-center items-center">
                     <img src="/icons/social/linkedin-fill.svg"/>
                 </NuxtLink>
-                <NuxtLink :to="social.leetcode.url" target="_blank" class="flex justify-center items-center">
+                <!-- <NuxtLink :to="social.leetcode.url" target="_blank" class="flex justify-center items-center">
                     <img src="/icons/social/leetcode.svg"/>
-                </NuxtLink>
+                </NuxtLink> -->
                 <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="flex md:hidden justify-center items-center">
                 <img src="/icons/social/github.svg"/>
             </NuxtLink>
