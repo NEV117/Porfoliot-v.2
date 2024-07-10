@@ -452,11 +452,11 @@ export default {
       }
     },
     downloadFile() {
-      var fileUrl = '/files/NicolasEscandonCV.pdf';
+      var fileUrl = '/files/NicolasEscandon.docx';
       // Crea un elemento <a> invisible
       var a = document.createElement('a');
       a.href = fileUrl;
-      a.download = 'NicolasEscandonCV.pdf'; // Nombre con el que se descargará el archivo
+      a.download = 'NicolasEscandon.docx'; // Nombre con el que se descargará el archivo
 
       // Agrega el elemento <a> al DOM
       document.body.appendChild(a);
