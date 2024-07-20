@@ -297,7 +297,7 @@
                     class="z-10 mb-2 mt-1 pl-8 pt-4 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
                     aria-label="May 2023 - Present"
                   >
-                    May 2023 - Nov 2023
+                    May 2023 - Present
                   </header>
                   <div class="z-10 sm:col-span-6 pr-5 pt-5 pb-5">
                     <h3 class="font-medium leading-snug text-slate-200">
